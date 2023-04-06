@@ -9,7 +9,7 @@ async function fetchData() {
     try {
     // This line sends an API request to get the list of the first 151 Pokémon. 
     // The response contains basic information about each Pokémon, such as their name and individual URL.
-    const response  = await axios.get("https://pokeapi.co/api/v2/pokemon/?limit=300");
+    const response  = await axios.get("https://pokeapi.co/api/v2/pokemon/?limit=151");
     // This line extracts the individual URLs for each Pokémon from the API response and stores them in 
     // an array called pokemonUrls.
     const pokemonUrls = response.data.results.map(p => p.url);
